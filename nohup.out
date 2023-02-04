@@ -1,0 +1,28 @@
+WARNING:root:OSError while attempting to symlink the latest log directory
+Traceback (most recent call last):
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\Scripts\airflow.exe\__main__.py", line 7, in <module>
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\lib\site-packages\airflow\__main__.py", line 39, in main
+    args.func(args)
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\lib\site-packages\airflow\cli\cli_parser.py", line 51, in command
+    func = import_string(import_path)
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\lib\site-packages\airflow\utils\module_loading.py", line 33, in import_string
+    module = import_module(module_path)
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\lib\site-packages\airflow\cli\commands\scheduler_command.py", line 24, in <module>
+    import daemon
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\lib\site-packages\daemon\__init__.py", line 33, in <module>
+    from .daemon import DaemonContext
+  File "C:\Users\vijay\AppData\Local\Programs\Python\Python310\lib\site-packages\daemon\daemon.py", line 13, in <module>
+    import pwd
+ModuleNotFoundError: No module named 'pwd'
